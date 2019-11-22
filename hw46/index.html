@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="css/gallery.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+    <div id="gal" class="gallery">
+        <ul class="images">
+            <li><img src="img/1_cat.jpg" alt="cat1"/></li>
+            <li><img src="img/2_cat.jpg" alt="cat2"/></li>
+            <li><img src="img/3_cat.jpg" alt="cat3"/></li>
+            <li><img src="img/4_cat.jpg" alt="cat4"/></li>
+            <li><img src="img/5_cat.jpg" alt="cat5"/></li>
+            <li><img src="img/6_cat.jpg" alt="cat6"/></li>
+            <li><img src="img/7_cat.jpg" alt="cat7"/></li>
+            <li><img src="img/8_cat.jpg" alt="cat8"/></li>
+            <li><img src="img/9_cat.jpg" alt="cat9"/></li>
+            <li><img src="img/10_cat.jpg" alt="cat10"/></li>
+            <li><img src="img/11_dog.jpg" alt="dog11"/></li>
+            <li><img src="img/12_dog.jpg" alt="dog12"/></li>
+            <li><img src="img/13_dog.jpg" alt="dog13"/></li>
+            <li><img src="img/14_dog.jpg" alt="dog14"/></li>
+            <li><img src="img/15_dog.jpg" alt="dog15"/></li>
+            <li><img src="img/16_dog.jpg" alt="dog16"/></li>
+            <li><img src="img/17_dog.jpg" alt="dog17"/></li>
+            <li><img src="img/18_dog.jpg" alt="dog18"/></li>
+        </ul>
+    </div>
+    <button id="expand" class="expand">&#9660;Разверенуть Галерею&#9660;</button>
+    <img id="globImg" class="globCl"
+         style="background-image: url(img/1_cat.jpg);background-size: 100%;background-repeat: no-repeat"/>
+    <ul class="but">
+        <li>
+            <button id="prevPhoto">Previous Photo</button>
+        </li>
+        <li>
+            <button id="nextPhoto">Next photo</button>
+        </li>
+        <li>
+            <button id="startSlide">Start slide</button>
+        </li>
+        <li>
+            <button id="stopSlide">Stop slide</button>
+        </li>
+        <li>
+            <input type="number" class="timeInp" value="1" min="1"/><span> s.</span>
+        </li>
+    </ul>
+    <script src="js/gallery.js"></script>
+</main>
+</body>
+</html>
