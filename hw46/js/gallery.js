@@ -15,7 +15,6 @@ class Gallery {
             this.srcAll[i] = this.children[i].firstChild.getAttribute('src');
         }
     }
-
     clickNext() {
         this.children[this.count].firstChild.classList.remove('currentPicture');
         if (this.count === this.children.length - 1) {
