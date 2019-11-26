@@ -2,7 +2,7 @@ function todoList() {
     let check = false;
     let input;
     document.getElementById("input").addEventListener('keydown', function (e) {
-        if (e.keyCode === 13) {
+        if (e.code === 'Enter') {
             let style = window.getComputedStyle(document.getElementsByTagName('main')[0]).height;
             let height = parseInt(style);
 
@@ -25,15 +25,15 @@ function todoList() {
 
             input.addEventListener('click', function () {
                 span.classList.toggle('inp');
-            })
+            });
 
             but.addEventListener('click', function () {
                 let style = window.getComputedStyle(document.getElementsByTagName('main')[0]).height;
                 let height = parseInt(style);
                 this.parentNode.remove();
                 document.getElementsByTagName('main')[0].style.height = (height - 40) + 'px';
-                
-            })
+
+            });
         }
     });
 }
