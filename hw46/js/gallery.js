@@ -49,11 +49,14 @@ class Gallery {
     startSlide() {
         let time = document.getElementsByClassName('timeInp')[0].value;
 
+        if (this.slideShow) this.stopSlide();
+
         this.slideShow = setInterval(this.clickNext.bind(gallery), time * 1000);
     }
 
     stopSlide() {
         clearInterval(this.slideShow);
+        this.slideShow = undefined;
     }
 
     expand() {
