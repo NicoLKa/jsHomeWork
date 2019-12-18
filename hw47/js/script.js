@@ -32,8 +32,8 @@ function todoList() {
                 let height = parseInt(style);
                 this.parentNode.remove();
                 document.getElementsByTagName('main')[0].style.height = (height - 40) + 'px';
-
             });
+            this.value = '';
         }
     });
 }
